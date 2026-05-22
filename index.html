@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Devin</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f6efe6;
+color:#2d2a26;
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(255,255,255,0.7);
+backdrop-filter:blur(12px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+nav img{
+width:60px;
+height:60px;
+border-radius:50%;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#2d2a26;
+font-weight:500;
+}
+
+nav a:hover{
+color:#6bbdd5;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:70px;
+}
+
+.hero p{
+font-size:22px;
+margin-top:15px;
+}
+
+.hero button{
+margin-top:25px;
+padding:14px 28px;
+border:none;
+background:#6bbdd5;
+color:white;
+border-radius:30px;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+}
+
+.hero button:hover{
+transform:scale(1.05);
+background:white;
+color:#2d2a26;
+}
+
+/* SECTIONS */
+section{
+padding:100px 8%;
+}
+
+.title{
+text-align:center;
+font-size:45px;
+margin-bottom:60px;
+}
+
+/* MENU */
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:20px;
+text-align:center;
+}
+
+/* HOURS */
+.hours{
+background:#6bbdd5;
+color:white;
+padding:60px;
+border-radius:30px;
+text-align:center;
+font-size:22px;
+}
+
+/* RESERVATION */
+form{
+background:white;
+padding:40px;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+display:grid;
+gap:15px;
+}
+
+input,textarea{
+padding:15px;
+border-radius:12px;
+border:1px solid #ddd;
+}
+
+button{
+padding:15px;
+border:none;
+background:#2d2a26;
+color:white;
+border-radius:12px;
+cursor:pointer;
+}
+
+/* CONTACT */
+.contact{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:25px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* MAP */
+iframe{
+width:100%;
+height:350px;
+border:none;
+border-radius:25px;
+margin-top:40px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:30px;
+background:#2d2a26;
+color:white;
+margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<img src="logo.png">
+<div>
+<a href="#menu">Menü</a>
+<a href="#hours">Öffnungszeiten</a>
+<a href="#reservation">Reservierung</a>
+<a href="#contact">Kontakt</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<div>
+<h1>Café Devin</h1>
+<p>Frühstück • Spaghetti Eis • Kaffee • Kuchen</p>
+<button onclick="document.getElementById('menu').scrollIntoView()">Entdecken</button>
+</div>
+</div>
+
+<!-- MENU -->
+<section id="menu">
+<div class="title">Unsere Spezialitäten</div>
+
+<div class="menu">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0">
+<h3>Frühstück</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371">
+<h3>Spaghetti Eis</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+<h3>Kaffee</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
+<h3>Kuchen</h3>
+</div>
+
+</div>
+</section>
+
+<!-- HOURS -->
+<section id="hours">
+<div class="title">Öffnungszeiten</div>
+<div class="hours">
+Montag - Freitag: 07:00 - 20:00<br>
+Samstag - Sonntag: 08:00 - 20:00
+</div>
+</section>
+
+<!-- RESERVATION -->
+<section id="reservation">
+<div class="title">Reservierung</div>
+
+<form action="mailto:cafedevin@hotmail.com">
+<input placeholder="Name">
+<input placeholder="E-Mail">
+<input placeholder="Telefon">
+<input type="date">
+<textarea placeholder="Nachricht"></textarea>
+<button>Reservieren</button>
+</form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="title">Kontakt</div>
+
+<div class="contact">
+<div class="box">📞<br>06171 8873888</div>
+<div class="box">✉️<br>cafedevin@hotmail.com</div>
+<div class="box">📍<br>Gartenstraße 26, 61449 Steinbach</div>
+</div>
+
+<iframe src="https://maps.google.com/maps?q=steinbach%20gartenstraße%2026&t=&z=15&output=embed"></iframe>
+
+</section>
+
+<footer>
+© 2025 Café Devin
+</footer>
+
+</body>
+</html>
