@@ -283,15 +283,17 @@ Samstag - Sonntag: 08:00 - 20:00
 <section id="reservation">
 <div class="title">Reservierung</div>
 
-<form action="mailto:cafedevin@hotmail.com">
-<input placeholder="Name">
-<input placeholder="E-Mail">
-<input placeholder="Telefon">
-<input type="date">
-<textarea placeholder="Nachricht"></textarea>
-<button>Reservieren</button>
+<form action="https://formspree.io/f/mgoqyvkb" method="POST">
+
+<input name="name" placeholder="Name" required>
+<input name="email" placeholder="E-Mail" required>
+<input name="phone" placeholder="Telefon">
+<input type="date" name="date">
+<textarea name="message" placeholder="Nachricht"></textarea>
+
+<button type="submit">Reservieren</button>
+
 </form>
-</section>
 
 <!-- CONTACT -->
 <section id="contact">
