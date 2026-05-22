@@ -287,12 +287,22 @@ Samstag - Sonntag: 08:00 - 20:00
 
 <input name="name" placeholder="Name" required>
 <input name="email" placeholder="E-Mail" required>
-<input name="phone" placeholder="Telefon">
-<input type="date" name="date">
+<input name="phone" placeholder="Telefonnummer">
+
+<label>Reservierungsdatum</label>
+<input type="date" name="date" required>
+
+<label>Uhrzeit</label>
+<input type="time" name="time">
+
+<input type="number" name="persons" placeholder="Anzahl der Personen" min="1" max="20">
+
 <textarea name="message" placeholder="Nachricht"></textarea>
 
-<button type="submit">Reservieren</button>
+<button type="submit">Reservierung senden</button>
 
+</form>
+  
 </form>
 
 <!-- CONTACT -->
