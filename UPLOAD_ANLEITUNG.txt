@@ -1,0 +1,10 @@
+CAFÉ DEVIN – GitHub Upload
+
+Repository: https://github.com/cafedevin/website
+
+1. Önce mevcut index.html, impressum.html, logo.png ve CNAME dosyalarını yedekleyin.
+2. Bu ZIP dosyasını bilgisayarda açın.
+3. İçindeki index.html, speisekarte.html, style.css, menu.js, datenschutz.html ve images klasörünü GitHub website deposunun ana dizinine yükleyin.
+4. Mevcut logo.png, impressum.html ve CNAME dosyalarını SİLMEYİN veya değiştirmeyin. Yeni HTML mevcut logo.png dosyasını kullanır.
+5. GitHub Commit changes ile kaydedin. GitHub Pages birkaç dakika sonra güncellenir.
+6. DİKKAT: Paket önizlemedir. Eksik fiyatlar, fotoğraflar ve Datenschutz metni yayımlamadan önce tamamlanmalıdır.

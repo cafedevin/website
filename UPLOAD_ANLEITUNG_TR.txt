@@ -1,0 +1,11 @@
+CAFÉ DEVIN - YENİ CANLI SİTE
+
+1. Önce mevcut GitHub repository dosyalarının yedeğini al.
+2. ZIP dosyasını bilgisayarında aç.
+3. ZIP içindeki index.html, speisekarte.html, style.css, menu.js, datenschutz.html, impressum.html ve images klasörünü GitHub deposunun KÖK dizinine yükle.
+4. ZIP dosyasının kendisini GitHub'a yükleme.
+5. GitHub deposundaki mevcut CNAME ve gerçek logo.png dosyalarını KORU.
+6. GitHub Pages yayımlanmasını bekle ve Ctrl+F5 ile yenile.
+7. Datenschutz metninin gerçek hosting ve veri işleme hizmetlerine uygunluğunu kontrol ettir. Fiyat ve çalışma saatlerini teyit et.
+
+Resimler images/ klasöründedir; tüm yerel bağlantılar kontrol edildi.
